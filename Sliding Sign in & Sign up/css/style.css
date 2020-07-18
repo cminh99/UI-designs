@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+section {
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+section .container {
+	position: relative;
+	width: 860px;
+	height: 500px;
+	background: #fff;
+	box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+}
+
+section .container .user {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+section .container .user .imgBox {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background: rgb(247, 56, 221, 0.8);
+	transition: 0.5s;
+}
+
+section .container .user .imgBox img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+section .container .user .formBox {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	transition: 0.5s;
+}
+
+section .container .user .formBox form h2 {
+	font-size: 22px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 10px;
+	color: #555;
+}
+
+section .container .user .formBox form input {
+	position: relative;
+	width: 100%;
+	padding: 10px;
+	background: #f5f5f5;
+	color: #333;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	margin: 8px 0;
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+
+section .container .user .formBox form input[type='submit'] {
+	color: #fff;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	transition: 0.5s;
+}
+
+#login-btn {
+	background: #00cec9;
+}
+
+#signup-btn {
+	background: #fd79a8;
+}
+
+section .container .user .formBox form .signup {
+	position: relative;
+	margin-top: 20px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #555;
+}
+
+section .container .user .formBox form .signup a {
+	font-weight: 600;
+	text-decoration: none;
+	color: #00cec9;
+}
+
+section .container .user .formBox form .login a {
+	font-weight: 600;
+	text-decoration: none;
+	color: #fd79a8;
+}
+
+section .container .signupBox {
+	pointer-events: none;
+}
+
+section .container.active .signupBox {
+	pointer-events: initial;
+}
+
+section .container .signupBox .formBox {
+	left: 100%;
+}
+
+section .container.active .signupBox .formBox {
+	left: 0;
+}
+
+section .container .signupBox .imgBox {
+	left: -100%;
+}
+
+section .container.active .signupBox .imgBox {
+	left: 0;
+}
+
+/*  */
+section .container .signinBox .formBox {
+	left: 0;
+}
+
+section .container.active .signinBox .formBox {
+	left: 100%;
+}
+
+section .container .signinBox .imgBox {
+	left: 0;
+}
+
+section .container.active .signinBox .imgBox {
+	left: -100%;
+}
+
+@media (max-width: 991px) {
+	section .container {
+		max-width: 430px;
+	}
+
+	section .container .imgBox {
+		display: none;
+	}
+
+	section .container .user .formBox {
+		width: 100%;
+	}
+}
