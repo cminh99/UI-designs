@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a18f8fdd62.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Pepsi</title>
+</head>
+<body>
+  <header class="header">
+    <a class="logo-box" href="#">
+      <img class="logo" src="images/logo.png" alt="">
+    </a>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">What's New</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Newsletter</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </header>
+  <section class="section">
+    <div class="text-box">
+      <h2>that's what<br><span>i like</span></h2>
+      <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quae doloribus, laudantium ad consequuntur, modi magni sunt eius veniam esse perferendis, recusandae voluptas, molestias neque explicabo obcaecati illum rerum eaque?</p>
+      <a href="#">view all products</a>
+    </div>
+    <div class="image-box">
+      <img class="pepsi" src="images/pepsi001.png" width="207px" alt="">
+      <ul class="social-media">
+        <li>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <ul class="thumb">
+      <li>
+        <img
+          class="pepsi"
+          src="images/pepsi001.png"
+          onclick="changePepsiAndBackground('images/pepsi001.png', '#0062be')"
+        >
+      </li>
+      <li>
+        <img
+          class="pepsi"
+          src="images/pepsi002.png"
+          onclick="changePepsiAndBackground('images/pepsi002.png', '#e60c2c')"
+        >
+      </li>
+      <li>
+        <img 
+          class="pepsi"
+          src="images/pepsi003.png"
+          onclick="changePepsiAndBackground('images/pepsi003.png', '#1e1e1e')"
+        >
+      </li>
+    </ul>
+  </section>
+
+  <script>
+    function changePepsiAndBackground(image, color) {
+      const body = document.querySelector('body');
+      body.style.background = color;
+      document.querySelector('.pepsi').src = image;
+    }
+  </script>
+</body>
+</html>

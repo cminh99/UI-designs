@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: #0062be;
+  display: flex;
+  flex-direction: column;
+  transition: .4s;
+}
+
+.header {
+  width: 100%;
+  height: 10%;
+  padding: 16px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo-box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header .logo-box .logo {
+  position: relative;
+  max-width: 48px;
+}
+
+.header .nav {
+  position: relative;
+  display: flex;
+}
+
+.header .nav .nav-item {
+  list-style: none;
+}
+
+.header .nav .nav-item .nav-link {
+  display: inline-block;
+  color: #fff;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+  transition: .4s;
+}
+
+.section {
+  padding: 50px 100px;
+  display: flex;
+}
+
+.section .text-box {
+  width: 50%;
+  color: #fff;
+}
+
+.section .text-box h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.section .text-box h2 span {
+  font-size: 8rem;
+}
+
+.section .text-box p {
+  margin: 20px 0 40px;
+}
+
+.section .text-box a {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 40px;
+  border: 1px solid #fff;
+  transition: .4s;
+}
+
+.section .text-box a:hover {
+  background: #fff;
+  color: #333;
+}
+
+.section .image-box {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section .social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 80px;
+}
+
+.section .social-media li {
+  list-style: none;
+  margin: 10px;
+}
+
+.section .social-media li a i {
+  color: #fff;
+  font-size: 24px;
+  transition: .2s;
+}
+
+.header .nav-link:hover,
+.section .social-media li a i:hover {
+  transform: scale(1.2);
+}
+
+.section .thumb {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+
+}
+
+.section .thumb li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.section .thumb li img {
+  max-width: 40px;
+  transition: .4s;
+}
+
+.section .thumb li img:hover {
+  transform: translateY(-15px);
+}
